@@ -1,0 +1,35 @@
+
+const images = [
+    { id: 1, src: './assets/images/Mountain/mountain1.jpg', title: 'Mountain' },
+    { id: 2, src: './assets/images/Mountain/mountain2.jpg', title: 'Mountain' },
+    { id: 3, src: './assets/images/Mountain/mountain3.jpg', title: 'Mountain' },
+    { id: 4, src: './assets/images/Mountain/mountain4.jpg', title: 'Mountain' },
+    { id: 5, src: './assets/images/Mountain/mountain5.jpg', title: 'Mountain' },
+    { id: 6, src: './assets/images/Mountain/mountain6.jpg', title: 'Mountain' },
+    { id: 7, src: './assets/images/Mountain/mountain7.jpg', title: 'Mountain' },
+    { id: 8, src: './assets/images/Mountain/mountain8.jpg', title: 'Mountain' },
+    { id: 1, src: './assets/images/Beach/Beach1.jpg', title: 'Beaches' },
+    { id: 2, src: './assets/images/Beach/Beach2.jpg', title: 'Beaches' },
+    { id: 3, src: './assets/images/Beach/Beach3.jpg', title: 'Beaches' },
+    { id: 4, src: './assets/images/Beach/Beach4.jpg', title: 'Beaches' },
+    { id: 5, src: './assets/images/Beach/Beach5.jpg', title: 'Beaches' },
+    { id: 6, src: './assets/images/Beach/Beach6.jpg', title: 'Beaches' },
+    { id: 7, src: './assets/images/Bird/Bird1.jpg', title: 'Birds' },
+    { id: 8, src: './assets/images/Bird/Bird2.jpg', title: 'Birds' },
+    { id: 9, src: './assets/images/Bird/Bird3.jpg', title: 'Birds' },
+    { id: 10, src: './assets/images/Bird/Bird4.jpg', title: 'Birds' },
+    { id: 11, src: './assets/images/Bird/Bird5.jpg', title: 'Birds' },
+    { id: 12, src: './assets/images/Bird/Bird6.jpg', title: 'Birds' },
+    { id: 13, src: './assets/images/Bird/Bird7.jpg', title: 'Birds' },
+    { id: 14, src: './assets/images/Bird/Bird8.jpg', title: 'Birds' },
+    { id: 15, src: './assets/images/Food/Food1.jpg', title: 'Food' },
+    { id: 16, src: './assets/images/Food/Food2.jpg', title: 'Food' },
+    { id: 17, src: './assets/images/Food/Food3.jpg', title: 'Food' },
+    { id: 18, src: './assets/images/Food/Food4.jpg', title: 'Food' },
+    { id: 19, src: './assets/images/Food/Food5.jpg', title: 'Food' },
+    { id: 20, src: './assets/images/Food/Food6.jpg', title: 'Food' },
+    { id: 21, src: './assets/images/Food/Food7.jpg', title: 'Food' },
+    
+  ];
+  
+export default images;
