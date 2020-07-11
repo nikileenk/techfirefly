@@ -49,6 +49,8 @@ class Login extends Component {
         else{
             this.setState({error:"Invalid Name",valid:false})
         }
+
+        if(this.state.valid === true){
         fetch("http://localhost:3000/login?q=" + this.state.name).then((data) => {
             data.json().then((resp) => {
                 this.setState({valid:true,error:""})
@@ -86,6 +88,7 @@ class Login extends Component {
             })
         })
     }
+}
     render() {
         return (
             <div>
