@@ -32,6 +32,8 @@ class Login extends Component {
 
                 if(validPass.test(this.state.password)){
                     this.setState({valid:true,error:""})
+                    localStorage.setItem('login',JSON.stringify(this.state.name))
+                        console.warn(this.props.history.push('/'))
                 }
 
                 else{
@@ -50,44 +52,45 @@ class Login extends Component {
             this.setState({error:"Invalid Name",valid:false})
         }
 
-        if(this.state.valid === true){
-        fetch("http://localhost:3000/login?q=" + this.state.name).then((data) => {
-            data.json().then((resp) => {
-                this.setState({valid:true,error:""})
+    //     if(this.state.valid === true){
+    //     fetch("http://localhost:3000/login?q=" + this.state.name).then((data) => {
+    //         data.json().then((resp) => {
+               
+    //             this.setState({valid:true,error:""})
 
                
-                if (resp.length > 0) {
-                    this.setState({valid:true,error:""})
-                    if(resp[0].email === this.state.email){
+    //             if (resp.length > 0) {
+    //                 this.setState({valid:true,error:""})
+    //                 if(resp[0].email === this.state.email){
 
-                        this.setState({valid:true,error:""});
+    //                     this.setState({valid:true,error:""});
 
-                        if(resp[0].password === this.state.password){
-                        localStorage.setItem('login',JSON.stringify(resp))
-                        console.warn(this.props.history.push('/'))
-                        }
+    //                     if(resp[0].password === this.state.password){
+    //                     localStorage.setItem('login',JSON.stringify(resp))
+    //                     console.warn(this.props.history.push('/'))
+    //                     }
 
-                        else{
-                            this.setState({error:"Invalid password, NOT in Database",valid:false})
+    //                     else{
+    //                         this.setState({error:"Invalid password, NOT in Database",valid:false})
                             
-                        }
-                    }
+    //                     }
+    //                 }
                    
                    
-                    else{
-                        this.setState({error:"Invalid Email, NOT in Database",valid:false})
+    //                 else{
+    //                     this.setState({error:"Invalid Email, NOT in Database",valid:false})
                        
-                    }
+    //                 }
                    
-                }
-                else {
-                    this.setState({error:"Invalid Name, NOT in Database",valid:false})
+    //             }
+    //             else {
+    //                 this.setState({error:"Invalid Name, NOT in Database",valid:false})
                    
-                }
+    //             }
 
-            })
-        })
-    }
+    //         })
+    //     })
+    // }
 }
     render() {
         return (
